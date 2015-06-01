@@ -1,3 +1,40 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 when I initialize a repository, git workflow is active on that repository. 
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+working directory is where i am working. repository is where
+git keeps track of changes that i made. its a git/version control concept. staging area is in between working directory and repository. it gives a preview of what will be commited to the git repository.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+whenever i am making changes, i can add those changes to the staging area. adding to staging area does not mean that I committed the changes to the repository. I can add as many time
+as I want on the staging area. Once, I am at the logical end of a
+change, I can then commit these changes from staging area to commit using one commit.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+when working on a large code repository, and working on a ticket to fix bug/add new feature, while other working on the code, it probably is a good idea to create a branch and work on it, rather than working on the master.
+
+
+How do the diagrams help you visualize the branch structure?
+
+the diagrams gives a nice flow chart of all the commits that has been made in the  repository. It shows different branch, and can be used to identify which commit is reachable from which branch, and which commit is unreachable.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+merging two branches will result in merge in two branch. It will take result from both branches and put it together.
+if a file is changed in both branches, then how much of those changes will be automatically merged? well, if the changes are not related to each other, i.e. suppose branch1 add a new function and branch2 add a separte new function, then ther is no conflict. so, merge will have no conflict. whereas, if both branch1 and 
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging does not always merge perfectly. Automatic merge works when two changes are different. however, if two changes are dependent on each other then, there will be conflict and Git won't be able to resolve it. Manual merging is better in this sense since merge is easier. On the other hand, always doing manual merging is tedius - if two changes are very different then its easier to use git's automatic merging.
+
+
+
